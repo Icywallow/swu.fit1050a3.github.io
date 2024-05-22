@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jays Models</title>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Images/favicon.png">
+    <title>Document</title>
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+        </style>
+        <script src="search.js"></script>
+</head>
+<body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- codestitch used: https://codestitch.app/app/dashboard/catalog/sections/1 -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <!-- Removed from class cs-logo to change the height and width -->
+            <a href="" aria-label="back to home"> 
+                <img src="Images/logo.png" alt="logo" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Crane
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Earthmoving
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Mining
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Trucks
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Cars
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Model Kits
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Merchandise
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Kids Corner
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Pre-Orders
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Scratch & Dent
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-button-solid cs-nav-button">Login</a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link"><img src="Images/shopping cart.PNG" width="50px" height="50px"></a>
+                            <!-- image source: https://www.cleanpng.com/png-computer-icons-portable-network-graphics-clip-art-6406456 -->
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+            <!--<button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button>-->
+        </div>
+    </header>
+
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- Stich used: https://codestitch.app/app/dashboard/stitches/1785 -->
+<!-- ============================================ -->
+
+<section id="hero-1785">
+    <div class="cs-container">
+        <div class="cs-content">
+            <!-- ====================== -->
+            <!-- Interactive search bar -->
+            <!-- ====================== -->
+                <div class="search-container">
+                    <!-- We don't have other pages, just link to the original website for now -->
+                        <input type="text" id="search-input" placeholder="Search for items..." autocomplete="off" >
+                        <button id="search-button" type="submit">Search</button>
+                        <ul id="dropdown" class="dropdown"></ul>
+                </div>
+            
+
+            <h1 class="cs-title">Featured Product</h1>
+            <span class="cs-topper">1:12 Scale Chevrolet Racing – Chevrolet Camaro Gen3 Supercar</span>
+            
+            <p class="cs-text-centre">
+                From the Racetrack to the Display Case, the Chevrolet Camaro Gen3 embodies power and precision.
+            </p>
+        </div>
+    </div>
+
+    <!-- Background Image -->
+    <div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="Images/Hero car.png">
+            <source media="(min-width: 601px)" srcset="Images/Hero car.png">
+            <a href=""><img loading="lazy" decoding="async" src="Images/Hero car.png" alt="field" width="1920" height="600" aria-hidden="true"></a>
+        </picture>
+    </div>
+
+    <div class="cs-button-group">
+        <a href="" class="cs-button-solid cs-button1">Buy Now</a>
+    </div>
+</section>
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- Stitch used: https://codestitch.app/app/dashboard/stitches/1431 -->
+<!-- Also used stitch for the button (buy now and read more) -->
+<!-- ============================================ -->
+
+<section id="sbs-1431">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-person">
+                <source media="(max-width: 600px)" srcset="Images/excavator.jpg">
+                <source media="(min-width: 601px)" srcset="Images/excavator.jpg">
+                <img loading="lazy" decoding="async" src="Images/excavator.jpg" alt="volunteer" width="702" height="617" aria-hidden="true">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Where Power Meets Perfection</span>
+            <h2 class="cs-title">Model of the day</h2>
+            <p class="cs-text">
+                TMC 1:50 Scale Hitachi ZX890LCH-7 Hydraulic Excavator
+            </p>
+            <ul class="cs-card-group">
+                <li class="cs-li">
+                    <div class="cs-flex">
+                        <p class="cs-li-text">
+                            A masterpiece with crafted with a focus on awe-inspiring power and precision
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-li">
+                    <div class="cs-flex">
+                        <a href="" class="cs-button-6" aria-label="read more about us">
+                            Read More
+                            <!--SVG Arrow-->
+                            <svg class="cs-icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.92 11.62C17.8724 11.4973 17.801 11.3851 17.71 11.29L12.71 6.29C12.6168 6.19676 12.5061 6.1228 12.3842 6.07234C12.2624 6.02188 12.1319 5.99591 12 5.99591C11.7337 5.99591 11.4783 6.1017 11.29 6.29C11.1968 6.38324 11.1228 6.49393 11.0723 6.61575C11.0219 6.73758 10.9959 6.86814 10.9959 7C10.9959 7.2663 11.1017 7.5217 11.29 7.71L14.59 11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H14.59L11.29 16.29C11.1963 16.383 11.1219 16.4936 11.0711 16.6154C11.0203 16.7373 10.9942 16.868 10.9942 17C10.9942 17.132 11.0203 17.2627 11.0711 17.3846C11.1219 17.5064 11.1963 17.617 11.29 17.71C11.383 17.8037 11.4936 17.8781 11.6154 17.9289C11.7373 17.9797 11.868 18.0058 12 18.0058C12.132 18.0058 12.2627 17.9797 12.3846 17.9289C12.5064 17.8781 12.617 17.8037 12.71 17.71L17.71 12.71C17.801 12.6149 17.8724 12.5028 17.92 12.38C18.02 12.1365 18.02 11.8635 17.92 11.62Z" fill="#1A1A1A"/>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li class="cs-li">
+                    <div class="cs-flex">
+                        <a href="" class="cs-button-6" style="--button-border-color:#229ac8;" aria-label="buy now">
+                            Buy Now
+                            <!--SVG Arrow-->
+                            <svg class="cs-icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" style="--cs-icon-color:#229ac8;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.92 11.62C17.8724 11.4973 17.801 11.3851 17.71 11.29L12.71 6.29C12.6168 6.19676 12.5061 6.1228 12.3842 6.07234C12.2624 6.02188 12.1319 5.99591 12 5.99591C11.7337 5.99591 11.4783 6.1017 11.29 6.29C11.1968 6.38324 11.1228 6.49393 11.0723 6.61575C11.0219 6.73758 10.9959 6.86814 10.9959 7C10.9959 7.2663 11.1017 7.5217 11.29 7.71L14.59 11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H14.59L11.29 16.29C11.1963 16.383 11.1219 16.4936 11.0711 16.6154C11.0203 16.7373 10.9942 16.868 10.9942 17C10.9942 17.132 11.0203 17.2627 11.0711 17.3846C11.1219 17.5064 11.1963 17.617 11.29 17.71C11.383 17.8037 11.4936 17.8781 11.6154 17.9289C11.7373 17.9797 11.868 18.0058 12 18.0058C12.132 18.0058 12.2627 17.9797 12.3846 17.9289C12.5064 17.8781 12.617 17.8037 12.71 17.71L17.71 12.71C17.801 12.6149 17.8724 12.5028 17.92 12.38C18.02 12.1365 18.02 11.8635 17.92 11.62Z" fill="#1A1A1A"/>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+            </ul>             
+        </div>
+    </div>
+</section>
+<!-- ============================================ -->
+<!--                  Collection                  -->
+<!-- Stitch used: https://codestitch.app/app/dashboard/stitches/1577 -->
+<!-- ============================================ -->
+
+<section id="collection-1577">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper" style="--secondary:#229ac8">Looking for something different?</span>
+            <h2 class="cs-title">Shop by Categories</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <span class="cs-category">Pre-Order</span>
+                    <picture class="cs-background" aria-hidden="true">
+                                <!-- IMAGE SOURCE: https://unsplash.com/photos/running-black-porsche-sedan-3ZUsNJhi_Ik -->
+                        <img loading="lazy" decoding="async"
+                                src="Images/porsche.jpg"
+                                width="365" height="201" alt="t-shirt">
+                    </picture>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <span class="cs-category">Limited Time Offers</span>
+                    <picture class="cs-background" aria-hidden="true">
+                                <!-- IMG SOURCE: https://unsplash.com/photos/truck-on-highway-during-daytime-7eaFIKeo1MQ -->
+                        <img loading="lazy" decoding="async"
+                                src="Images/truck.jpg" width="365"
+                                height="201" alt="purse">
+                    </picture>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <span class="cs-category">Brands</span>
+                    <picture class="cs-background" aria-hidden="true">
+                        <!-- img source: https://unsplash.com/photos/person-sitting-on-tower-at-daytime-XvNPUh6fWVk -->
+                        <img loading="lazy" decoding="async"
+                                src="Images/Crane.jpg"
+                                width="365" height="201" alt="shoes">
+                    </picture>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <span class="cs-category">Merchandise</span>
+                    <picture class="cs-background" aria-hidden="true">
+                            <!-- Image source: https://unsplash.com/photos/orange-audi-coupe-parked-on-gray-concrete-road-GRV4ypBKgxE -->
+                        <img loading="lazy" decoding="async"
+                                src="Images/Audi.jpg"
+                                width="365" height="201" alt="perfume">
+                    </picture>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- ============================================ -->
+<!--                  Collection                  -->
+<!-- ============================================ -->
+
+<!--
+    To add a 4th or 5th collection or more, copy and paste the cs-button and change it's data-filter to the next number, in this case it's 4. Do the same to the cs-listing and its data-category number. And that's it!
+-->
+
+<section id="collection-1602">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">New Arrivals</h2>
+        </div>
+        <div class="cs-listing-wrapper">
+            <!--Listing 1-->
+            <div class="cs-listing" data-category="one">
+                <div class="cs-item">
+                    <a href="" class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <img loading="lazy" decoding="async"
+                                        src="Images/kmartcar.jpg"
+                                        alt="gallery" width="305" height="400">
+                                        <!-- img source: https://jaysmodels.com.au/authentic-collectables-118-scale-51-holden-vf-commodore-2003-bathurst-winner-imagination-project-edition-6-acd18hip06/ -->
+                            </picture>
+                            <span class="cs-offer">Pre-Order</span>
+                        </div>
+                        <div class="cs-details">
+                            <span class="cs-category">Pre-Order, Brands</span>
+                            <h3 class="cs-name">1:18 Scale Holden VF Commodore</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$20.00</span>
+                                    <span class="cs-was-price">$35.00</span>
+                                    <div class="cs-stars">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="cs-flex">
+                                    <a href="" class="cs-button-6" style="--button-border-color:#229ac8;" aria-label="buy now">
+                                        Buy Now
+                                        <!--SVG Arrow-->
+                                        <svg class="cs-icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" style="--cs-icon-color:#229ac8;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.92 11.62C17.8724 11.4973 17.801 11.3851 17.71 11.29L12.71 6.29C12.6168 6.19676 12.5061 6.1228 12.3842 6.07234C12.2624 6.02188 12.1319 5.99591 12 5.99591C11.7337 5.99591 11.4783 6.1017 11.29 6.29C11.1968 6.38324 11.1228 6.49393 11.0723 6.61575C11.0219 6.73758 10.9959 6.86814 10.9959 7C10.9959 7.2663 11.1017 7.5217 11.29 7.71L14.59 11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H14.59L11.29 16.29C11.1963 16.383 11.1219 16.4936 11.0711 16.6154C11.0203 16.7373 10.9942 16.868 10.9942 17C10.9942 17.132 11.0203 17.2627 11.0711 17.3846C11.1219 17.5064 11.1963 17.617 11.29 17.71C11.383 17.8037 11.4936 17.8781 11.6154 17.9289C11.7373 17.9797 11.868 18.0058 12 18.0058C12.132 18.0058 12.2627 17.9797 12.3846 17.9289C12.5064 17.8781 12.617 17.8037 12.71 17.71L17.71 12.71C17.801 12.6149 17.8724 12.5028 17.92 12.38C18.02 12.1365 18.02 11.8635 17.92 11.62Z" fill="#1A1A1A"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cs-item">
+                    <a href="" class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <img loading="lazy" decoding="async"
+                                        src="Images/ballastbox.jpg"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                            <span class="cs-offer">Limited Availability</span>
+                        </div>
+                        <div class="cs-details">
+                            <span class="cs-category">Truck Accessories, Truck</span>
+                            <h3 class="cs-name">1:50 Scale Ballast Box – S&S Heavy Haulage</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$90.00</span>
+                                    <span class="cs-was-price">$99.00</span>
+                                    <div class="cs-stars">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="cs-flex">
+                                    <a href="" class="cs-button-6" style="--button-border-color:#229ac8;" aria-label="buy now">
+                                        Buy Now
+                                        <!--SVG Arrow-->
+                                        <svg class="cs-icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" style="--cs-icon-color:#229ac8;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.92 11.62C17.8724 11.4973 17.801 11.3851 17.71 11.29L12.71 6.29C12.6168 6.19676 12.5061 6.1228 12.3842 6.07234C12.2624 6.02188 12.1319 5.99591 12 5.99591C11.7337 5.99591 11.4783 6.1017 11.29 6.29C11.1968 6.38324 11.1228 6.49393 11.0723 6.61575C11.0219 6.73758 10.9959 6.86814 10.9959 7C10.9959 7.2663 11.1017 7.5217 11.29 7.71L14.59 11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H14.59L11.29 16.29C11.1963 16.383 11.1219 16.4936 11.0711 16.6154C11.0203 16.7373 10.9942 16.868 10.9942 17C10.9942 17.132 11.0203 17.2627 11.0711 17.3846C11.1219 17.5064 11.1963 17.617 11.29 17.71C11.383 17.8037 11.4936 17.8781 11.6154 17.9289C11.7373 17.9797 11.868 18.0058 12 18.0058C12.132 18.0058 12.2627 17.9797 12.3846 17.9289C12.5064 17.8781 12.617 17.8037 12.71 17.71L17.71 12.71C17.801 12.6149 17.8724 12.5028 17.92 12.38C18.02 12.1365 18.02 11.8635 17.92 11.62Z" fill="#1A1A1A"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cs-item">
+                    <a href="" class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <img loading="lazy" decoding="async"
+                                        src="Images/earthmoving.jpg"
+                                        alt="gallery" width="305" height="400">
+                                        <!-- img source: https://jaysmodels.com.au/diecast-masters-elite-series-1125-scale-caterpillar-24m-motor-grader-85539/ -->
+                            </picture>
+                            <span class="cs-offer">In store NOW</span>
+                        </div>
+                        <div class="cs-details" alt="1:125 Scale Caterpillar 24M Motor Grader">
+                            <span class="cs-category">Earthmoving</span>
+                            <h3 class="cs-name">1:125 Scale Caterpillar 24M Motor Grader</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$110.00</span>
+                                    <span class="cs-was-price">$129.00</span>
+                                    <div class="cs-stars">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="cs-flex">
+                                    <a href="" class="cs-button-6" style="--button-border-color:#229ac8;" aria-label="buy now">
+                                        Buy Now
+                                        <!--SVG Arrow-->
+                                        <svg class="cs-icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" style="--cs-icon-color:#229ac8;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.92 11.62C17.8724 11.4973 17.801 11.3851 17.71 11.29L12.71 6.29C12.6168 6.19676 12.5061 6.1228 12.3842 6.07234C12.2624 6.02188 12.1319 5.99591 12 5.99591C11.7337 5.99591 11.4783 6.1017 11.29 6.29C11.1968 6.38324 11.1228 6.49393 11.0723 6.61575C11.0219 6.73758 10.9959 6.86814 10.9959 7C10.9959 7.2663 11.1017 7.5217 11.29 7.71L14.59 11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H14.59L11.29 16.29C11.1963 16.383 11.1219 16.4936 11.0711 16.6154C11.0203 16.7373 10.9942 16.868 10.9942 17C10.9942 17.132 11.0203 17.2627 11.0711 17.3846C11.1219 17.5064 11.1963 17.617 11.29 17.71C11.383 17.8037 11.4936 17.8781 11.6154 17.9289C11.7373 17.9797 11.868 18.0058 12 18.0058C12.132 18.0058 12.2627 17.9797 12.3846 17.9289C12.5064 17.8781 12.617 17.8037 12.71 17.71L17.71 12.71C17.801 12.6149 17.8724 12.5028 17.92 12.38C18.02 12.1365 18.02 11.8635 17.92 11.62Z" fill="#1A1A1A"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                </div>
+            </div>
+    </div>
+    
+           
+            </div>
+        </div>
+</div>  
+<script src="filter.js"></script>
+</section>
+                         
+</body>
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-308">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="Images/logo.png" alt="logo" width="178" height="32">
+            </a>
+            <p class="cs-text">
+                You are welcome to come and visit our showroom. We are located at 2A Kennaugh St, Oakleigh East, Victoria 3166 Australia – We are Melbourne’s Diecast Model Specialists.
+            </p>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Information</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">F.A.Q.'s</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">About Jays Models</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Payments & Shipping</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Terms and Conditions</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Privacy Policy</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Customer Service</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">My Account</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Contact Us</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Returns</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Sitemap</a>
+            </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Extras</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Brands</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Specials</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Gift Ideas</a>
+            </li>
+        </ul>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-copyright">Jays Models © 2023<a class="cs-copyright-link" href=""> - All rights reserved</a></span>
+    </div>
+</footer>
+
+
+
+</html>
+                                

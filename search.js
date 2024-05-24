@@ -1,3 +1,4 @@
+// Note: To add more items, append details to items.json
 let items = []
 
 // On website load
@@ -19,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Error handling
         .catch(error => console.error('Something went wrong while fetching: ', error))
 
-    // Search bar logic
+    // Search bar logic, runs when user types into searchInput
     searchInput.addEventListener('input', () => {
 
         // Assign user's input to query
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         dropdown.innerHTML = '';
         
         // If user input
-        if (query) {
+        if (query.length) {
             
             // Filter the items, that includes the user query, 
             const filteredItems = items.filter(item => item.name.toLowerCase().includes(query));
@@ -44,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const li = document.createElement('li');
                 li.innerHTML = `${item.name} <span class="price">${item.price}</span>`;
                 
-                // Fill in search bar if user clicks the item
+                // Add event listener to fill in search bar if user clicks the item
                 li.addEventListener('click', () => {
                     searchInput.value = item.name;
                     dropdown.style.display = 'none';
@@ -53,13 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Append to dropdown
                 dropdown.appendChild(li);
             });
+
             // If user does not input, don't display anything
         } else {
             dropdown.style.display = 'none';
         }
     });
 
-    const redirectToSearch = () => {
+    // This function conducts the search
+    const search = () => {
         // Remove trailing and end whitespace
         const query = searchInput.value.trim();
 
@@ -70,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Add the function to the search button
-    searchButton.addEventListener('click', redirectToSearch)
+    searchButton.addEventListener('click', search)
 
     // If user clicks aside the dropdown, close the dropdown
     document.addEventListener('click', (event) => {
